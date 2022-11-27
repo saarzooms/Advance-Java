@@ -1,0 +1,52 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+    <servlet-name>MyfirstServlet</servlet-name>
+    <servlet-class>TestServlet</servlet-class>
+    <init-param>
+      <param-name>uname</param-name>
+      <param-value>Arzoo</param-value>
+    </init-param>
+    <init-param>
+      <param-name>pwd</param-name>
+      <param-value>123</param-value>
+    </init-param>
+  </servlet>
+  <servlet>
+    <servlet-name>kuchhbhi</servlet-name>
+    <servlet-class>AnyThingServlet</servlet-class>
+  </servlet>
+  <context-param>
+    <param-name>dbuser</param-name>
+    <param-value>root</param-value>
+  </context-param>
+  <context-param>
+    <param-name>app-name</param-name>
+    <param-value>Testing</param-value>
+  </context-param>
+  <servlet-mapping>
+    <servlet-name>kuchhbhi</servlet-name>
+    <url-pattern>/anything</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>MyfirstServlet</servlet-name>
+    <url-pattern>/testURL</url-pattern>
+  </servlet-mapping>
+  <filter>
+    <filter-name>logsFilter</filter-name>
+    <filter-class>TestFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>logsFilter</filter-name>
+    <url-pattern>/testURL</url-pattern>
+  </filter-mapping>
+  <welcome-file-list>
+    <welcome-file>login.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
