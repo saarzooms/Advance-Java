@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<books>
+    <book>
+        <name>JSP</name>
+        <author>Test JSP</author>
+    </book>
+    <book>
+        <name>Servlet</name>
+        <author>Test Servlet</author>
+    </book>
+</books>
